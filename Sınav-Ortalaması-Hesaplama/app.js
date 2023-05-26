@@ -9,11 +9,15 @@ submitDOM.addEventListener('click', () => {
 
     let durum = ''
 
-    if (ortalama < 50) {
-        durum = 'Kaldı'
+    if (ortalama >= 85 && ortalama <= 100) {
+        durum = 'AA'
+    } else if (ortalama >= 65 && ortalama < 85) {
+        durum = 'BB'
+    } else if (ortalama >= 50 && ortalama < 65) {
+        durum = 'CC'
     } else {
-        durum = 'Geçti'
+        durum = 'FF'
     }
 
     document.getElementById('ort').innerHTML = `${durum}: ${ortalama}`
-})
+});
