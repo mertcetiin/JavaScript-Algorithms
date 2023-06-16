@@ -1,7 +1,5 @@
 function uygunTelNumarası() {
     let verilenNumara = '3121887733';
-    let result = '';
-
 
     let number = verilenNumara.split(' ');
 
