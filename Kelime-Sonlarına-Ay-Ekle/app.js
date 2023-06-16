@@ -3,13 +3,13 @@ function kelimelerinSonlarınaAyEkle() {
 
     let kelime = verilenKelime.split(' ');
 
-    let donusturulmus = kelime.map(item => {
+    let donusturulmusKelime = kelime.map(item => {
         let ilkHarf = item.slice(0, 1);
         let geriKalan = item.slice(1);
 
         return geriKalan + ilkHarf + 'ay';
     });
-    let result = donusturulmus.join(' ');
+    let result = donusturulmusKelime.join(' ');
     return result;
 }
 
