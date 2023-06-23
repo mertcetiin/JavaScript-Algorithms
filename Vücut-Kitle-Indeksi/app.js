@@ -1,6 +1,6 @@
 // kilo / (boy * boy)
 
-const submitDOM = document.querySelector('.submit')
+const submitDOM = document.querySelector('.submit');
 
 submitDOM.addEventListener('click', () => {
 
@@ -9,7 +9,7 @@ submitDOM.addEventListener('click', () => {
 
     let IndeksHesaplama = Math.floor(Number(kilo) / Number(boy * boy))
 
-    let durum = ''
+    let durum = '';
 
     if (IndeksHesaplama < 18) {
         durum = 'Zayıf'
