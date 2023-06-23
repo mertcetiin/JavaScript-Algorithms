@@ -24,4 +24,4 @@ submitDOM.addEventListener('click', () => {
     }
 
     alert(`${durum}  ${IndeksHesaplama}`)
-})
+});
