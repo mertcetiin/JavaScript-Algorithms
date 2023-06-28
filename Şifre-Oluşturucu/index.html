@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Şifre Oluşturucu</h2>
+        <div class="result-container">
+            <textarea id="PasswordResult"></textarea>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Şifre uzunluğu</label>
+                <input type="number" id="Passwordlength" min="4" max="20" value="8" />
+            </div>
+            <div class="setting">
+                <label>Büyük harfler olsun</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Küçük harfler olsun</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Sayılar olsun</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Özel karakterler olsun</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-large" id="generateBtn">
+                <i class="fas fa-key"></i> Oluştur
+            </button>
+            <button class="btn" id="clipboardBtn">
+                <i class="far fa-clipboard"></i> Kopyala
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
